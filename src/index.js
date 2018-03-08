@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './PersonalPage.css';
 import registerServiceWorker from './registerServiceWorker';
+import {BrowserRouter, Route, Link} from 'react-router-dom';
 
 class PersonalPage extends React.Component {
   render() {
@@ -22,9 +23,11 @@ class AboutSection extends React.Component {
 			<div id="about">
     		<p id="aboutname">Praneeth Thalla</p>
       	<p id="aboutdescription">Software Engineer, Web Designer, and Computer Scientist</p>
-    		<img id="aboutpic" src="praneeth.jpg"></img>
+    		<img id="aboutpic" src="praneeth.jpg" alt="About pic"></img>
     		<p id="aboutcontent">
-					<h2>Hi there!</h2>
+					<strong>Hi there!</strong>
+					<br></br>
+					<br></br>
 					My name is Praneeth Thalla, and I've spent most of my adult life building full stack web applications. My interests primarily include designing interactive front-end interfaces and exploring innovative ideas in the field of web development. 
     			</p>
     </div>
@@ -38,10 +41,10 @@ class ProjectsList extends React.Component {
 			<div>
 				<div id="projectsheader">Experience</div>
 				<div id="projectslist">
-					<div id="fannie" class="project">
-				    <img id="fanniepic" class="projectpic"></img>
-				    <div id="fanniedescr" class="projectdescr">
-				      <h3 class="projectsnames"><a href="http://www.fanniemae.com/portal/index.html">Fannie Mae (2017)</a></h3>
+					<div id="fannie" className="project">
+				    <img id="fanniepic" className="projectpic" alt="Fannie pic"></img>
+				    <div id="fanniedescr" className="projectdescr">
+				      <h3 className="projectsnames"><a href="http://www.fanniemae.com/portal/index.html">Fannie Mae (2017)</a></h3>
 				      <p>I currently work as a Software Engineer at Fannie Mae, primarily focusing on backend development using Java/Python. I've only worked here for a couple months so far, but I've already done some pretty interesting work. The main two projects that I've worked on are service virtualization and integrating machine learning into a Jenkins build pipeline.
 				      <br></br>
 				      <br></br>
@@ -52,10 +55,10 @@ class ProjectsList extends React.Component {
 				    </div>
 				  </div>
 
-				  <div id="upward" class="project">
-				    <img id="upwardpic" class="projectpic"></img>
-				    <div id="upwarddescr" class="projectdescr">
-							<h3 class="projectsnames"><a href="https://www.upwardhq.com">Upward (2016)</a></h3>
+				  <div id="upward" className="project">
+				    <img id="upwardpic" className="projectpic" alt="Upward pic"></img>
+				    <div id="upwarddescr" className="projectdescr">
+							<h3 className="projectsnames"><a href="https://www.upwardhq.com">Upward (2016)</a></h3>
 							<p>I cofounded Upward in 2016 to allow professionals to interact better in a work-based environment. Upward tackled the core issues of slow communication in an office by replacing email accounts with an innovative messaging platform.
 							<br></br>
 				      <br></br>
@@ -66,10 +69,10 @@ class ProjectsList extends React.Component {
 						</div>
 					</div>
 
-				  <div id="kaiser" class="project">
-				    <img id="kaiserpic" class="projectpic"></img>
-				    <div id="kaiserdescr" class="projectdescr">
-				      <h3 class="projectsnames"><a href="https://healthy.kaiserpermanente.org/">Kaiser Permanente (2015)</a></h3>
+				  <div id="kaiser" className="project">
+				    <img id="kaiserpic" className="projectpic" alt="Kaiser pic"></img>
+				    <div id="kaiserdescr" className="projectdescr">
+				      <h3 className="projectsnames"><a href="https://healthy.kaiserpermanente.org/">Kaiser Permanente (2015)</a></h3>
 				      <p>My first steps into programming involved solving a problem I found with my university: the lack of a simple app to calculate my GPA. There were plenty of options on the Play Store (I had a Nexus 5), but most of them were unintuitive, cluttered with ads, lacked modern design principles, or just simply didn't work. 
 				      <br></br>
 				      <br></br>
@@ -77,10 +80,10 @@ class ProjectsList extends React.Component {
 				    </div>
 				  </div>
 
-					<div id="gpacalulator" class="project">
-				    <img id="gpacalculatorpic" class="projectpic"></img>
-				    <div id="gpacalculatordescr" class="projectdescr">
-							<h3 class="projectsnames"><a href="https://play.google.com/store/apps/details?id=com.praneeth.gpacalculator&hl=en">GPA Calculator (2014)</a></h3>
+					<div id="gpacalulator" className="project">
+				    <img id="gpacalculatorpic" className="projectpic" alt="GPA Calculator pic"></img>
+				    <div id="gpacalculatordescr" className="projectdescr">
+							<h3 className="projectsnames"><a href="https://play.google.com/store/apps/details?id=com.praneeth.gpacalculator&hl=en">GPA Calculator (2014)</a></h3>
 							<p>My first steps into programming involved solving a problem I found with my university: the lack of a simple app to calculate my GPA. There were plenty of options on the Play Store (I had a Nexus 5), but most of them were unintuitive, cluttered with ads, lacked modern design principles, or just simply didn't work. 
 				      <br></br>
 				      <br></br>
@@ -93,7 +96,7 @@ class ProjectsList extends React.Component {
 	}
 }
 
-class App extends React.Component {
+class FullPage extends React.Component {
 	render() {
 		return(
 			<div id="container">
@@ -101,11 +104,82 @@ class App extends React.Component {
 				<AboutSection/>
 				<hr id="randomline"></hr>
 				<ProjectsList/>
+				<div id="blogbuttoncontainer">
+					<Link to="/blog"><button id="blogbutton">Blog</button></Link>
+				</div>
 				<p id="bottomnote">Powered by Caffeine 2017</p>
 			</div>
 		);
 	}
 }
 
-ReactDOM.render(<App/>, document.getElementById('root'));
+class App extends React.Component {
+	render() {
+		return(
+			<div>
+				<Route component={ScrollToTop}/>
+				<Route exact path="/" component={FullPage}/>
+				<Route exact path="/aboutme" component={FullPage}/>
+				<Route exact path="/blog" component={BlogList}/>
+			</div>
+		);
+	}
+}
+
+class Card extends React.Component {
+	render() {
+		return(
+			<div class="container my-container w-50">
+				<div class="row picrow my-row">
+					<img id="folespic"></img>
+				</div>
+				<div class="row bodyrow">
+					<div class="col">
+						<div class="row my-row titlerow">
+							<div class="col">
+								<a href="nickfolesblog">The Accuracy of Nick Foles</a>
+							</div>
+							<div class="col">
+							By Praneeth Thalla (03/08/2018)
+							</div>
+						</div>
+						<div class="row my-row summaryrow">Nick Foles is a legend, here's why. He has the fastest arm in the NFL. He has the coolest hair. His name is Nick, which obviously is Greek Latin for "SUPERBOWL MVP". There is no one who can throw the football over the mountains like he can, and it shows in big one. Here is what happens to the text if I keep typing here. 
+						</div>
+						<div class="row my-row readmorerow">
+							<a href="nickfolesblog">Read more</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		);
+	}
+}
+
+
+class BlogList extends React.Component {
+	render() {
+		return(
+			<div>
+				<Card/>
+				<Card/>
+				<div id="blogbuttoncontainer">
+					<Link to="/"><button id="blogbutton">Home</button></Link>
+				</div>
+			</div>
+		)
+	}
+}
+
+const ScrollToTop = () => {
+  window.scrollTo(0, 0);
+  return null;
+};
+
+ReactDOM.render(
+	<BrowserRouter>
+		<App/>
+	</BrowserRouter>
+, document.getElementById('root'));
+
+
 registerServiceWorker();

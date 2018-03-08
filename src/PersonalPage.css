@@ -106,7 +106,7 @@
 
 #projectslist {
   margin: 0 auto;
-  width: 80%;
+  width: 90%;
   color: #474747;
 }
 
@@ -115,7 +115,7 @@
 }
 
 .project {
-  margin-left: 10%;
+  margin-left: 12%;
   margin-top: 7%;
 }
 
@@ -160,6 +160,31 @@
 
 /* bottom stuff */
 
+#blogbuttoncontainer {
+  width: 100%;
+  text-align: center;
+  margin-top: 20%;
+}
+
+#blogbutton {
+  font-family: 'Muli', sans-serif;;
+  background-color: white;
+  color: #232323;;
+  font-size: 30px;
+  border-color: #232323;
+  border-width: 1px;
+  padding: 14px 25px;
+  cursor: pointer;
+  border-radius: 2px;
+  transition-duration: 0.4s;
+  margin-bottom: 5%;
+}
+
+#blogbutton:hover {
+  background-color: #333333;;
+  color: white;
+}
+
 #bottomnote {
   width: 100%;
   text-align: center;
@@ -168,5 +193,57 @@
   margin-bottom: 5%;
 }
 
+#cardboxcontainer {
+  width: 100%;
+  text-align: center;
+  margin-top: 5%;
+}
 
+#cardbox {
+  width: 800px;
+  height: 500px;
+  box-shadow: 2px 4px #B8B8B8;
+  background-color: #F2F2F2;
+  display: inline-block;
+}
+
+.my-container {
+  margin-top: 75px;
+  height: 550px;
+  margin-bottom: 200px;
+  //border: 1px solid green;
+  padding-bottom: 25px;
+  box-shadow: 0 2px 7px -4px black;
+}
+
+.picrow {
+  height: 70%;
+}
+
+.bodyrow {
+  height: 30%;
+}
+
+.titlerow {
+  height: 20%;
+  padding-top: 15px;
+}
+
+.summaryrow {
+  height: 65%;
+  padding-top: 15px;
+  padding-left: 10px;
+}
+
+.readmorerow {
+  height: 15%;
+  padding-top: 15px;
+  padding-left: 10px;
+}
+
+#folespic {
+  content: url("images/nickfolesblog.jpg");
+  width: 100%;
+  height: 100%;
+}
 
