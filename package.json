@@ -4,12 +4,14 @@
   "private": true,
   "dependencies": {
     "gh-pages": "^1.1.0",
+    "jquery": "^3.3.1",
     "radium": "^0.22.0",
     "react": "^16.2.0",
     "react-animations": "^1.0.0",
     "react-dom": "^16.2.0",
     "react-router-dom": "^4.2.2",
-    "react-scripts": "1.1.1"
+    "react-scripts": "1.1.1",
+    "react-scroll": "^1.7.7"
   },
   "scripts": {
     "start": "react-scripts start",

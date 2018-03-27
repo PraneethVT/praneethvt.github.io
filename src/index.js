@@ -1,12 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import {BrowserRouter, Route, Link} from 'react-router-dom';
-import Landing from './components/Landing.js'
-import RecentProjects from './components/RecentProjects.js';
-import Experience from './components/Experience.js'
-import BlogList from './components/BlogList.js';
-import './PersonalPage.css';
-
+import Landing from './components/Landing.jsx'
+//import AboutMe from './components/AboutMe.jsx';
+import RecentProjects from './components/RecentProjects.jsx';
+import Experience from './components/Experience.jsx'
+import BlogList from './components/BlogList.jsx';
+import './css/index.css'
 
 class ThallaIO extends React.Component {
 	render() {
@@ -14,6 +14,7 @@ class ThallaIO extends React.Component {
 			<div id="container">
 				<Landing/>
 				<RecentProjects/>
+				{/*<AboutMe/>*/}
 				<hr id="randomline"></hr>
 				<Experience/>
 				<div id="blogbuttoncontainer">

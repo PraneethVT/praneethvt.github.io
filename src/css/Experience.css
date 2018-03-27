@@ -1,0 +1,98 @@
+
+#projectsheader {
+  margin: 0 auto;
+  margin-top: 2.5em;
+  text-align: center;
+  width: 100%;
+  outline: none;
+  font-size: 2.5em;
+  //font-size: 5vw;
+}
+
+
+#projectslist {
+  margin: 0 auto;
+  width: 90%;
+  color: #474747;
+}
+
+.projectsnames {
+  color: #007ce2;
+}
+
+.project {
+  margin-left: 12%;
+  margin-top: 7%;
+}
+
+.projectpic {
+  width: 8em;
+  height: 8em;
+}
+
+.projectdescr {
+  width: 65%;
+  margin: 0 auto;
+  font-size: 1.05em;
+}
+
+#upwardpic {
+  float: left;
+  content: url("../images/upward.jpg");
+}
+
+#gpacalculatorpic {
+  float: left;
+  margin-top: 0.5%;
+  content: url("../images/gpacalculator.png");
+}
+
+#fanniepic {
+  float: left;
+  content: url("../images/fannie.jpg");
+}
+
+#kaiserpic {
+  float: left;
+  content: url("../images/kaiser.png");
+}
+
+.project a:link {
+  text-decoration: none;
+}
+
+
+/* bottom stuff */
+
+#blogbuttoncontainer {
+  width: 100%;
+  text-align: center;
+  margin-top: 20%;
+}
+
+#blogbutton {
+  font-family: 'Muli', sans-serif;;
+  background-color: white;
+  color: #232323;;
+  font-size: 30px;
+  border-color: #232323;
+  border-width: 1px;
+  padding: 14px 25px;
+  cursor: pointer;
+  border-radius: 2px;
+  transition-duration: 0.4s;
+  margin-bottom: 5%;
+}
+
+#blogbutton:hover {
+  background-color: #333333;;
+  color: white;
+}
+
+#bottomnote {
+  width: 100%;
+  text-align: center;
+  color: #7a7a7a;
+  margin-top: 20%;
+  margin-bottom: 5%;
+}

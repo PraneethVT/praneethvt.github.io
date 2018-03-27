@@ -1,12 +1,13 @@
 import React from 'react';
+import '../css/AboutMe.css'
 
-class RecentProjects extends React.Component {
+class AboutMe extends React.Component {
 	render() {
 		return(
 			<div id="about">
     		<p id="aboutname">Praneeth Thalla</p>
       	<p id="aboutdescription">Software Engineer, Web Designer, and Computer Scientist</p>
-    		<img id="aboutpic" src="praneeth.jpg" alt="About pic"></img>
+    		<img id="aboutpic" alt="About pic" ></img>
     		<p id="aboutcontent">
 					<strong>Hi there!</strong>
 					<br></br>
@@ -18,4 +19,4 @@ class RecentProjects extends React.Component {
 	}
 }
 
-export default RecentProjects;
+export default AboutMe;

@@ -1,5 +1,5 @@
 import React from 'react';
-import BlogCard from './BlogCard.js'
+import BlogCard from './BlogCard.jsx'
 import {Link} from 'react-router-dom';
 
 class BlogList extends React.Component {
