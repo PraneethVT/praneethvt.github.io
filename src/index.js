@@ -17,9 +17,9 @@ class ThallaIO extends React.Component {
 				{/*<AboutMe/>*/}
 				<hr id="randomline"></hr>
 				<Experience/>
-				<div id="blogbuttoncontainer">
+				{/*<div id="blogbuttoncontainer">
 					<Link to="/blog"><button id="blogbutton">Blog</button></Link>
-				</div>
+				</div>*/}
 				<p id="bottomnote">Powered by Caffeine 2017</p>
 			</div>
 		);
