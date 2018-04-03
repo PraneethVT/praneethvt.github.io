@@ -1,11 +1,11 @@
 /* full page div and title  */ 
-#recentprojectsfullpage {
+#recents {
   width: 100%;
   height: 100%;
 }
 
-#latestprojectstitle {
-	margin-top: 2em;
+#recents_title {
+	margin-top: 2.75em;
 	margin-bottom: 1em;
 	font-size: 2em;
 	width: 100%;
@@ -17,33 +17,33 @@
 	max-width: 100%;
 }
 
-.projectsbox {
+.recents_box {
 	height: 350px;
 	background-color: #606060;
 	text-align: center;
 	background-size: 100% 100%;
 }
 
-#thallaiothumbnail {
+#recents_thallaio {
 	background-image: url('../images/thallaiothumbnail.jpg');
 }
 
-#timetweetthumbnail {
+#recents_uptothetwinute {
 	background-image: url('../images/uptothetwinutethumbnail.jpg');
 }
 
-#upwardhqthumbnail {
+#recents_upward {
 	background-image: url('../images/upwardhqthumbnail.jpg');
 }
 
-.projectsbox:hover {
+.recents_box:hover {
 	background-color: #232323;
 	color: white;
 }
 
 
 /* Overlay animations */
-.projectsboxoverlay {
+.recents_boxoverlay {
 	height: 100%;
 	padding-top: 30%;
 	opacity: 0;
@@ -51,18 +51,18 @@
   transition-duration: .4s;
 }
 
-.projectsbox:hover .projectsboxoverlay {
+.recents_box:hover .recents_boxoverlay {
 	opacity: 1;
 	color: white;
 	background-color: rgba(0, 0, 0, 0.7);
 }
 
-.projectsboxoverlay p {
+.recents_boxoverlay p {
 	font-size: 1.8em;
 	font-family: 'Muli:700', sans-serif;
 }
 
-.projectsboxviewbutton {
+.recents_viewbutton {
 	font-family: 'Muli', sans-serif;
 	font-weight: bold;
 	background: none;
@@ -76,13 +76,13 @@
   transition-duration: .4s;
 }
 
-.projectsboxviewbutton:hover {
+.recents_viewbutton:hover {
 	background-color: white;
 	color: #232323;
 }
 
 /* More projects button */
-#moreprojectsbutton {
+#recents_morebutton {
   font-family: 'Muli', sans-serif;;
   background-color: white;
   color: #232323;;
@@ -96,7 +96,24 @@
   margin-top: 2em;
 }
 
-#moreprojectsbutton:hover {
+#recents_morebutton:hover {
   background-color: #333333;;
   color: white;
 }
+
+/* Arrow holders */
+#recents_arrowupholder {
+	margin-top: 35px;
+  width: 100%;
+  position: absolute;
+  text-align: center;
+}
+
+#recents_arrowdownholder {
+	margin-top: 45px;
+  width: 100%;
+  position: absolute;
+  text-align: center;
+}
+
+

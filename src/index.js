@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import {BrowserRouter, Route, Link} from 'react-router-dom';
+import {BrowserRouter, Route} from 'react-router-dom';
 import Landing from './components/Landing.jsx'
 //import AboutMe from './components/AboutMe.jsx';
 import RecentProjects from './components/RecentProjects.jsx';
@@ -15,7 +15,6 @@ class ThallaIO extends React.Component {
 				<Landing/>
 				<RecentProjects/>
 				{/*<AboutMe/>*/}
-				<hr id="randomline"></hr>
 				<Experience/>
 				{/*<div id="blogbuttoncontainer">
 					<Link to="/blog"><button id="blogbutton">Blog</button></Link>

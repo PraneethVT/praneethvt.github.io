@@ -1,12 +1,13 @@
+#experience {
+  background-color: #efefef;
+  padding-bottom: 4em;
+  padding-top: 5em;
+}
 
 #projectsheader {
-  margin: 0 auto;
-  margin-top: 2.5em;
   text-align: center;
   width: 100%;
-  outline: none;
   font-size: 2.5em;
-  //font-size: 5vw;
 }
 
 
@@ -96,3 +97,13 @@
   margin-top: 20%;
   margin-bottom: 5%;
 }
+
+
+/* Arrow Holders */
+#experience_arrowupholder {
+  margin-top: -40px;
+  width: 100%;
+  position: absolute;
+  text-align: center;
+}
+

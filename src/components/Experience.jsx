@@ -1,11 +1,23 @@
 import React from 'react';
-import '../css/Experience.css'
+import Arrow from './Arrow.jsx';
+import '../css/Experience.css';
 
 class Experience extends React.Component {
 	render() {
+		let arrowUpProps = {
+			direction: "up",
+			borderStyle: "solid",
+			borderColor: "black",
+			scrollToComponentName: "recents"
+		};
+
 		return(
-			<div>
-				<div id="projectsheader">Experience</div>
+			<div id="experience">
+				<div id="experience_arrowupholder">
+					<Arrow arrowProps={arrowUpProps}/>
+				</div>
+
+				<p id="projectsheader">Experience</p>
 				<div id="projectslist">
 					<div id="fannie" className="project">
 				    <img id="fanniepic" className="projectpic" alt="Fannie pic"></img>
