@@ -1,45 +1,35 @@
-#about {
-  padding-top: 5%;
-  margin: 0 auto;
-  text-align: center;
+#aboutme {
   width: 100%;
-  outline: none;
+  height: 100%;
+  background-color: white;
+  position: relative;
 }
 
-#about #aboutname {
-  font-size: 2.9em;
-  //font-size: 5.5vw;
+
+#blogbuttoncontainer {
+  width: 100%;
+  text-align: center;
+  top: 45%;
+  position: absolute;
 }
 
-#about #aboutdescription {
-  font-size: 1.5em;
-  //font-size: 2.9vw;
-  color: #7f7f7f;
+#blogbuttoncontainer p {
+  font-size: 2.5em;
 }
 
-#aboutpic {
-  //margin-top: 5%;
-  //border-radius: 50%;
-  //width: 50px;
-  height: 50px;
-  content: url("../images/upward.jpg");
+
+#bottom_note {
+  width: 100%;
+  text-align: center;
+  color: #232323;
+  bottom: 5%;
+  position: absolute;
 }
 
-#about #aboutcontent {
-  padding-top: 5%;
-  margin: 0 auto;
-  width: 60%;
-  font-size: 1.08em;
-  color: #474747;
-}
-
-/* random line */
-
-#randomline {
-  width: 75%;
-  margin-left: auto;
-  margin-right: auto;
-  border-color: #d8d8d8;
-  margin-top: 8%;
-  margin-bottom: 8%;
+/* Arrow holder */
+#aboutme_arrowupholder {
+  margin-top: 5%;
+  width: 100%;
+  position: absolute;
+  text-align: center;
 }

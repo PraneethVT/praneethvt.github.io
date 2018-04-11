@@ -1,0 +1,32 @@
+#experience_description {
+  display: flex;
+  margin-top: 30px;
+}
+
+#experience_company {
+  font-weight: 400;
+  color: #2196F3;
+}
+
+#experience_role p {
+  font-weight: 700;
+  font-size: 1.1rem;
+  margin-bottom: .4rem;
+}
+
+#experience_location {
+  font-weight: 600;
+  margin-bottom: .4rem;
+}
+
+.experience_pic {
+  width: 200px;
+  height: 200px;
+  border-radius: 20%;
+  margin-top: 20px;
+}
+
+#experience_details {
+  margin-left: 30px;
+}
+

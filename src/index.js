@@ -2,9 +2,9 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import {BrowserRouter, Route} from 'react-router-dom';
 import Landing from './components/Landing.jsx'
-//import AboutMe from './components/AboutMe.jsx';
 import RecentProjects from './components/RecentProjects.jsx';
-import Experience from './components/Experience.jsx'
+import Experience from './components/Experience.jsx';
+import AboutMe from './components/AboutMe.jsx';
 import BlogList from './components/BlogList.jsx';
 import './css/index.css'
 
@@ -14,12 +14,8 @@ class ThallaIO extends React.Component {
 			<div id="container">
 				<Landing/>
 				<RecentProjects/>
-				{/*<AboutMe/>*/}
 				<Experience/>
-				{/*<div id="blogbuttoncontainer">
-					<Link to="/blog"><button id="blogbutton">Blog</button></Link>
-				</div>*/}
-				<p id="bottomnote">Powered by Caffeine 2017</p>
+				<AboutMe/>
 			</div>
 		);
 	}

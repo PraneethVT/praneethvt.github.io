@@ -1,109 +1,92 @@
 #experience {
-  background-color: #efefef;
+  background-color: #eee;
   padding-bottom: 4em;
   padding-top: 5em;
+  height: 100%;
+  position: relative;
 }
 
-#projectsheader {
+#experience_title {
   text-align: center;
   width: 100%;
   font-size: 2.5em;
 }
 
-
-#projectslist {
+#slides_container {
+  display: flex;
   margin: 0 auto;
-  width: 90%;
-  color: #474747;
+  width: 60%;
+  margin-top: 20px;
+  height: 50%;
 }
 
-.projectsnames {
-  color: #007ce2;
+.slides_buttons {
+  margin-top: 150px;
 }
 
-.project {
-  margin-left: 12%;
-  margin-top: 7%;
-}
-
-.projectpic {
-  width: 8em;
-  height: 8em;
-}
-
-.projectdescr {
-  width: 65%;
-  margin: 0 auto;
-  font-size: 1.05em;
-}
-
-#upwardpic {
-  float: left;
-  content: url("../images/upward.jpg");
-}
-
-#gpacalculatorpic {
-  float: left;
-  margin-top: 0.5%;
-  content: url("../images/gpacalculator.png");
-}
-
-#fanniepic {
-  float: left;
-  content: url("../images/fannie.jpg");
-}
-
-#kaiserpic {
-  float: left;
-  content: url("../images/kaiser.png");
-}
-
-.project a:link {
-  text-decoration: none;
-}
-
-
-/* bottom stuff */
-
-#blogbuttoncontainer {
+#somebuttoncontainer {
   width: 100%;
   text-align: center;
-  margin-top: 20%;
+  margin-top: 50px;
 }
 
-#blogbutton {
-  font-family: 'Muli', sans-serif;;
-  background-color: white;
-  color: #232323;;
-  font-size: 30px;
-  border-color: #232323;
-  border-width: 1px;
-  padding: 14px 25px;
+#somebuttoncontainer button:focus {
+  outline-style: none;
+}
+
+#right_button {
+  border-style: solid;
+  border-color: black;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: .3rem;
+  float: right;
+  margin-left: 50px;
+
   cursor: pointer;
-  border-radius: 2px;
-  transition-duration: 0.4s;
-  margin-bottom: 5%;
+
+  transform: rotate(315deg);
+  -webkit-transform: rotate(315deg);
 }
 
-#blogbutton:hover {
-  background-color: #333333;;
-  color: white;
+#right_button_holder {
+  -moz-animation: bounce_right_button 2s infinite;
+  -webkit-animation: bounce_right_button 2s infinite;
+  animation: bounce_right_button 2s infinite;
 }
 
-#bottomnote {
-  width: 100%;
-  text-align: center;
-  color: #7a7a7a;
-  margin-top: 20%;
-  margin-bottom: 5%;
+#left_button {
+  border-style: solid;
+  border-color: black;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: .3rem;
+  float: left;
+  margin-right: 50px;
+
+  cursor: pointer;
+
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
 }
 
+#left_button_holder {
+  -moz-animation: bounce_left_button 2s infinite;
+  -webkit-animation: bounce_left_button 2s infinite;
+  animation: bounce_left_button 2s infinite;
+}
 
 /* Arrow Holders */
 #experience_arrowupholder {
-  margin-top: -40px;
+  top: 5%;
   width: 100%;
   position: absolute;
   text-align: center;
 }
 
+#experience_arrowdownholder {
+  bottom: 5%;
+  width: 100%;
+  position: absolute;
+  text-align: center;
+}

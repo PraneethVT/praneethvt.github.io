@@ -24,10 +24,10 @@ class Arrow extends React.Component {
 
 		let transformation = (this.arrowProps.direction === "up") ? "rotate(225deg)": "rotate(45deg)";
 		let arrowStyle = {
-			"border-style": this.arrowProps.borderStyle,
-			"border-color": this.arrowProps.borderColor,
+			"borderStyle": this.arrowProps.borderStyle,
+			"borderColor": this.arrowProps.borderColor,
 			"transform": transformation,
-			"-webkit-transform": transformation
+			"WebKitTransform": transformation
 		}
 
 		return(
