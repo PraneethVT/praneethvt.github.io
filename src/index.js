@@ -1,12 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import {BrowserRouter, Route} from 'react-router-dom';
-import Landing from './components/Landing.jsx'
-import RecentProjects from './components/RecentProjects.jsx';
-import Experience from './components/Experience.jsx';
-import AboutMe from './components/AboutMe.jsx';
-import BlogList from './components/BlogList.jsx';
-import './css/index.css'
+import Landing from './components/main/Landing.jsx'
+import RecentProjects from './components/main/RecentProjects.jsx';
+import Experience from './components/main/Experience.jsx';
+import MoreAboutMe from './components/main/MoreAboutMe.jsx';
+import './index.css'
 
 class ThallaIO extends React.Component {
 	render() {
@@ -15,7 +14,7 @@ class ThallaIO extends React.Component {
 				<Landing/>
 				<RecentProjects/>
 				<Experience/>
-				<AboutMe/>
+				<MoreAboutMe/>
 			</div>
 		);
 	}
@@ -32,7 +31,6 @@ class App extends React.Component {
 			<div>
 				<Route component={ScrollToTop}/>
 				<Route exact path="/" component={ThallaIO}/>
-				<Route exact path="/blog" component={BlogList}/>
 			</div>
 		);
 	}

@@ -9,20 +9,38 @@
   -webkit-transform: rotate(225deg);
 }
 
-#bounceholder {
-  -moz-animation: bounce 2s infinite;
-  -webkit-animation: bounce 2s infinite;
-  animation: bounce 2s infinite;
+#bounceHolderTop {
+  -moz-animation: bounceTop 2s infinite;
+  -webkit-animation: bounceTop 2s infinite;
+  animation: bounceTop 2s infinite;
 }
 
-@keyframes bounce {
+@keyframes bounceTop {
   0%, 20%, 50%, 80%, 100% {
     transform: translateY(0);
   }
   40% {
-    transform: translateY(-10px);
+    transform: translateY(8px);
   }
   60% {
-    transform: translateY(-5px);
+    transform: translateY(4px);
+  }
+}
+
+#bounceHolderBottom {
+  -moz-animation: bounceBottom 2s infinite;
+  -webkit-animation: bounceBottom 2s infinite;
+  animation: bounceBottom 2s infinite;
+}
+
+@keyframes bounceBottom {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-8px);
+  }
+  60% {
+    transform: translateY(-4px);
   }
 }

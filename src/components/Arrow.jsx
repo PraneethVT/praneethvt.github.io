@@ -21,7 +21,6 @@ class Arrow extends React.Component {
 	}
 
 	render() {
-
 		let transformation = (this.arrowProps.direction === "up") ? "rotate(225deg)": "rotate(45deg)";
 		let arrowStyle = {
 			"borderStyle": this.arrowProps.borderStyle,
@@ -30,8 +29,20 @@ class Arrow extends React.Component {
 			"WebKitTransform": transformation
 		}
 
+		let arrowHolderStyle = {
+			"width": "100%",
+			"position": "absolute",
+			"textAlign": "center",
+			"top": (this.arrowProps.placement === "top" ? "4%" : "92%")
+		}
+
+		let bounceHolder = "bounceHolder" + ((this.arrowProps.placement === "top") ? "Top" : "Bottom");
+		console.log(bounceHolder);
+
 		return(
-	    <p id="bounceholder" onClick={this.scrollToComponent}><i id="arrow" style={arrowStyle}></i></p>
+			<div style={arrowHolderStyle}>
+	    	<p id={bounceHolder} onClick={this.scrollToComponent}><i id="arrow" style={arrowStyle}></i></p>
+			</div>
 		);
 	}
 }

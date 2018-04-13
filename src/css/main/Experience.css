@@ -1,0 +1,35 @@
+/* General CSS */
+#experience {
+  background-color: #eee;
+  padding-bottom: 4em;
+  padding-top: 5em;
+  height: 100%;
+  position: relative;
+}
+
+#experienceHeader {
+  text-align: center;
+  width: 100%;
+  font-size: 2.5em;
+}
+
+
+
+/* Slides */
+#slidesContainer {
+  display: flex;
+  margin: 0 auto;
+  width: 60%;
+  margin-top: 20px;
+  height: 50%;
+}
+
+#slidesNavButtonHolder {
+  width: 100%;
+  text-align: center;
+  margin-top: 50px;
+}
+
+#slidesNavButtonHolder button:focus {
+  outline-style: none;
+}

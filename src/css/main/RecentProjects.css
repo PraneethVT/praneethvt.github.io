@@ -1,11 +1,12 @@
-/* full page div and title  */ 
-#recents {
+/* General CSS */
+#recentProjects {
   width: 100%;
 	height: 100%;
 	background-color: white;
+	position: relative;
 }
 
-#recents_title {
+#recentProjectsHeader {
 	margin-top: 2.75em;
 	margin-bottom: 1em;
 	font-size: 2em;
@@ -13,38 +14,41 @@
 	text-align: center;
 }
 
-/* 3 latest projects (boxes and overlay animations) */
+
+
+/* Recent projects boxes */
 .container {
 	max-width: 100%;
 }
 
-.recents_box {
+.recentProjectsBox {
 	height: 350px;
 	background-color: #606060;
 	text-align: center;
 	background-size: 100% 100%;
 }
 
-#recents_thallaio {
-	background-image: url('../images/colorfulpic.jpg');
-}
-
-#recents_uptothetwinute {
-	background-image: url('../images/colorfulpic2.jpg');
-}
-
-#recents_upward {
-	background-image: url('../images/colorfulpic3.jpg');
-}
-
-.recents_box:hover {
+.recentProjectsBox:hover {
 	background-color: #232323;
 	color: white;
 }
 
+#recentProjectsThallaIO {
+	background-image: url('../../images/colorfulpic.jpg');
+}
+
+#recentProjectsTweetTime {
+	background-image: url('../../images/colorfulpic2.jpg');
+}
+
+#recentProjectsUpward {
+	background-image: url('../../images/colorfulpic3.jpg');
+}
+
+
 
 /* Overlay animations */
-.recents_boxoverlay {
+.recentProjectsBoxOverlay {
 	height: 100%;
 	padding-top: 30%;
 	opacity: 0;
@@ -52,18 +56,18 @@
   transition-duration: .4s;
 }
 
-.recents_box:hover .recents_boxoverlay {
+.recentProjectsBox:hover .recentProjectsBoxOverlay {
 	opacity: 1;
 	color: white;
 	background-color: rgba(0, 0, 0, 0.7);
 }
 
-.recents_boxoverlay p {
+.recentProjectsBoxOverlay p {
 	font-size: 2em;
 	font-family: 'Muli:700', sans-serif;
 }
 
-.recents_viewbutton {
+.recentProjectsBoxViewButton {
 	font-family: 'Muli', sans-serif;
 	font-weight: 500;
 	background: none;
@@ -77,13 +81,15 @@
   transition-duration: .4s;
 }
 
-.recents_viewbutton:hover {
+.recentProjectsBoxViewButton:hover {
 	background-color: white;
 	color: #232323;
 }
 
+
+
 /* More projects button */
-#recents_morebutton {
+#recentProjectsMoreButton {
   font-family: 'Muli', sans-serif;;
   background-color: white;
   color: black;;
@@ -97,24 +103,7 @@
   margin-top: 2em;
 }
 
-#recents_morebutton:hover {
+#recentProjectsMoreButton:hover {
   background-color: #333333;;
   color: white;
 }
-
-/* Arrow holders */
-#recents_arrowupholder {
-	margin-top: 35px;
-  width: 100%;
-  position: absolute;
-  text-align: center;
-}
-
-#recents_arrowdownholder {
-	margin-top: 45px;
-  width: 100%;
-  position: absolute;
-  text-align: center;
-}
-
-

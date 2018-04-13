@@ -3,14 +3,14 @@
   height: 100%;
 }
 
-#landing_titleholder {
+#landingWelcomeMessageHolder {
   top: 35%;
   width: 100%;
   position: absolute;
   text-align: center;
 }
 
-#landing_title {  
+#landingWelcomeMessage {  
   color: #fff;
   font-size: 5rem;
   animation-name: titlefadein;
@@ -23,7 +23,7 @@
   to {opacity: 1;}
 }
 
-#landing_caption {
+#landingWelcomeCaption {
   color: #2196F3;
   font-size: 1.8rem;
   animation-name: captionfadein;
@@ -36,16 +36,12 @@
   100% {opacity: 1;}
 }
 
-#landing_arrowholder {
-  bottom: 5%;
-  width: 100%;
-  position: absolute;
-  text-align: center;
-  animation: delayedarrow;
+#landingArrow {
+  animation: arrowfadein;
   animation-duration: 1.8s;
 }
 
-@keyframes delayedarrow {
+@keyframes arrowfadein {
   0% {opacity: 0;}
   75% {opacity: 0;}
   100% {opacity: 1;}

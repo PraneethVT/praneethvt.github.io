@@ -1,35 +1,29 @@
-#aboutme {
+/* General CSS */
+#moreAboutMe {
   width: 100%;
   height: 100%;
   background-color: white;
   position: relative;
 }
 
-
-#blogbuttoncontainer {
+#blogMessageContainer {
   width: 100%;
   text-align: center;
   top: 45%;
   position: absolute;
 }
 
-#blogbuttoncontainer p {
+#blogMessageContainer p {
   font-size: 2.5em;
 }
 
 
-#bottom_note {
+
+/* Footnote */
+#footnote {
   width: 100%;
   text-align: center;
   color: #232323;
   bottom: 5%;
   position: absolute;
-}
-
-/* Arrow holder */
-#aboutme_arrowupholder {
-  margin-top: 5%;
-  width: 100%;
-  position: absolute;
-  text-align: center;
 }

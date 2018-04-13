@@ -1,35 +1,31 @@
 import React from 'react';
-import Arrow from './Arrow.jsx';
-import ExperienceDescription from './ExperienceDescription.jsx'
-import '../css/Experience.css';
+import Arrow from '../Arrow.jsx';
+import ExperienceDescription from '../ExperienceDescription.jsx'
+import '../../css/main/Experience.css';
 
 class Experience extends React.Component {
 	constructor(props) {
 		super(props);
-		this.slideIndex = 1;
+		this.slideIndex = 0;
 		this.plusDivs = this.plusDivs.bind(this);
 		this.minusDivs = this.minusDivs.bind(this);
 		this.showDivs = this.showDivs.bind(this);
+		this.currentDiv = this.currentDiv.bind(this);
 	}
 	
 	componentDidMount() {
-		this.showDivs(this.slideIndex);
+		this.currentDiv(this.slideIndex);
 	}
 
 	plusDivs() {
-		//let rightAnimation = document.getElementById("experience_description");
-		//rightAnimation.className = "w3-animate-right";
 		this.showDivs(this.slideIndex += 1);
 	}
 
 	minusDivs() {
-		//let leftAnimation = document.getElementById("experience_description");
-		//leftAnimation.className = "w3-animate-left";
 		this.showDivs(this.slideIndex -= 1);
 	}
 
 	showDivs(slideNum) {
-		console.log(slideNum);
 		let slidesElements = document.getElementsByClassName("mySlides");
 		if (slideNum > slidesElements.length) {
 			this.slideIndex = 1;
@@ -66,34 +62,31 @@ class Experience extends React.Component {
 			direction: "up",
 			borderStyle: "solid",
 			borderColor: "black",
-			scrollToComponentName: "recents"
+			scrollToComponentName: "recentProjects",
+			placement: "top"
 		};
 
 		let arrowDownProps = {
 			direction: "down",
 			borderStyle: "solid",
 			borderColor: "black",
-			scrollToComponentName: "aboutme"
+			scrollToComponentName: "moreAboutMe",
+			placement: "bottom"
 		}
-
-		
 
 		return(
 			<div id="experience">
-				<div id="experience_arrowupholder">
-					<Arrow arrowProps={arrowUpProps}/>
-				</div>
-				<p id="experience_title">Experience</p>
+				<Arrow arrowProps={arrowUpProps}/>
+				
+				<p id="experienceHeader">Experience</p>
 			
-				<div id="somebuttoncontainer"> 
+				<div id="slidesNavButtonHolder"> 
 					<button className="w3-button demo" onClick={() => this.currentDiv(0)}>2017</button> 
 					<button className="w3-button demo" onClick={() => this.currentDiv(1)}>2016</button> 
 					<button className="w3-button demo" onClick={() => this.currentDiv(2)}>2015</button>
 				</div>
 
-				<div id="slides_container">
-						{/* <div className="slides_buttons"><p id="left_button_holder" onClick={this.minusDivs}><i id="left_button"></i></p></div> */}
-						
+				<div id="slidesContainer">
 						<div className="mySlides">
 							<ExperienceDescription experienceName="fannie"/>
 						</div>
@@ -103,17 +96,9 @@ class Experience extends React.Component {
 						<div className="mySlides">
 							<ExperienceDescription experienceName="kaiser"/>
 						</div>
-						
-						{/*<div className="slides_buttons"><p id="right_button_holder" onClick={this.plusDivs}><i id="right_button"></i></p></div>*/}
-
-						
 				</div>
 
-				
-
-				<div id="experience_arrowdownholder">
-					<Arrow arrowProps={arrowDownProps}/>
-				</div>
+				<Arrow arrowProps={arrowDownProps}/>
 			</div>
 		);
 	}
