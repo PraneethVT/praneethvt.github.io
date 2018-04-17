@@ -11,7 +11,8 @@
 }
 
 #landingWelcomeMessage {  
-  color: #fff;
+  /* color: #fff; */
+  color: #000;
   font-size: 5rem;
   animation-name: titlefadein;
   animation-duration: 1.5s;

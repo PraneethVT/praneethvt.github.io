@@ -7,7 +7,7 @@ class Landing extends React.Component {
 		let arrowDownProps = {
 			direction: "down",
 			borderStyle: "solid",
-			borderColor: "white",
+			borderColor: "black",
 			scrollToComponentName: "recentProjects",
 			placement: "bottom"
 		};

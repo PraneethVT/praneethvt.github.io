@@ -10,7 +10,7 @@ class ExperienceDescription extends React.Component {
     
     switch(props.experienceName) {
       case "fannie": 
-        this.img_id = "fanniepic";
+        this.img_id = "fanniePic";
         this.img_alt = "Fannie Mae Pic";
         this.img_src = fanniepic;
         this.experience_company = <a href="http://www.fanniemae.com/portal/index.html">Fannie Mae</a>;
@@ -20,7 +20,7 @@ class ExperienceDescription extends React.Component {
         break;
 
       case "upward": 
-        this.img_id = "upwardpic";
+        this.img_id = "upwardPic";
         this.img_alt = "Upward Pic";
         this.img_src = upwardpic;
         this.experience_company = <a href="https://www.upwardhq.com">Upward</a>;
@@ -30,7 +30,7 @@ class ExperienceDescription extends React.Component {
         break;
 
       case "kaiser": 
-        this.img_id = "kaiserpic";
+        this.img_id = "kaiserPic";
         this.img_alt = "Kaiser Pic";
         this.img_src = kaiserpic;
         this.experience_company = <a href="https://healthy.kaiserpermanente.org/">Kaiser Permanente</a>;
@@ -46,13 +46,13 @@ class ExperienceDescription extends React.Component {
 
   render() {
     return(
-      <div id="experience_description" className="w3-animate-opacity">
-        <div><img src={this.img_src} id={this.img_id} alt={this.imd_alt} className="experience_pic"></img></div>
-        <div id="experience_details">
-          <h3 id="experience_company">{this.experience_company}</h3>
-          <div id="experience_role">{this.experience_role}</div>
-          <p id="experience_location">{this.experience_location}</p>
-          <p id="experience_summary">{this.experience_summary}</p>
+      <div id="experienceDescription" className="w3-animate-opacity">
+        <div><img src={this.img_src} id={this.img_id} alt={this.imd_alt} className="experiencePic"></img></div>
+        <div id="experienceDetails">
+          <h3 id="experienceCompany">{this.experience_company}</h3>
+          <div id="experienceRole">{this.experience_role}</div>
+          <p id="experienceLocation">{this.experience_location}</p>
+          <p id="experienceSummary">{this.experience_summary}</p>
         </div>
       </div>
     )
