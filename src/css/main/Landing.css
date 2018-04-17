@@ -14,8 +14,8 @@
   /* color: #fff; */
   color: #000;
   font-size: 5rem;
-  animation-name: titlefadein;
-  animation-duration: 1.5s;
+  /* animation-name: titlefadein; */
+  /* animation-duration: 1.5s; */
   margin-bottom: 0;
 }
 
@@ -27,8 +27,9 @@
 #landingWelcomeCaption {
   color: #2196F3;
   font-size: 1.8rem;
-  animation-name: captionfadein;
-  animation-duration: 1.5s;
+  /* animation-name: captionfadein; */
+  /* animation-duration: 1.5s; */
+  animation-duration: 4s;
 }
 
 @keyframes captionfadein {
@@ -39,7 +40,8 @@
 
 #landingArrow {
   animation: arrowfadein;
-  animation-duration: 1.8s;
+  /* animation-duration: 1.8s; */
+  animation-duration: 5s;
 }
 
 @keyframes arrowfadein {
