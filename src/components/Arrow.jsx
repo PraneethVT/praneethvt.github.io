@@ -33,7 +33,7 @@ class Arrow extends React.Component {
 			"width": "100%",
 			"position": "absolute",
 			"textAlign": "center",
-			"top": (this.arrowProps.placement === "top" ? "4%" : "92%")
+			"top": (this.arrowProps.placement === "top" ? "4%" : "90%")
 		}
 
 		let bounceHolder = "bounceHolder" + ((this.arrowProps.placement === "top") ? "Top" : "Bottom");

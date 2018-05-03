@@ -3,49 +3,70 @@
   height: 100%;
 }
 
-#landingWelcomeMessageHolder {
-  top: 35%;
-  width: 100%;
-  position: absolute;
+#landingGrid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
   text-align: center;
 }
 
 #landingWelcomeMessage {  
-  /* color: #fff; */
   color: #000;
-  font-size: 5rem;
-  /* animation-name: titlefadein; */
-  /* animation-duration: 1.5s; */
+  font-size: 2.5rem;
+  margin-top: 0;
   margin-bottom: 0;
+  animation-name: landingWelcomeMessageFadeIn; 
+  animation-duration: 1.5s; 
 }
 
-@keyframes titlefadein {
+@keyframes landingWelcomeMessageFadeIn {
   from {opacity: 0;}
   to {opacity: 1;}
 }
 
 #landingWelcomeCaption {
   color: #2196F3;
-  font-size: 1.8rem;
-  /* animation-name: captionfadein; */
-  /* animation-duration: 1.5s; */
-  animation-duration: 4s;
+  font-size: 1.1rem;
+  margin-top: .75rem;
+  margin-bottom: 0;
+  animation-name: landingWelcomeCaptionFadeIn; 
+  animation-duration: 1.5s; 
 }
 
-@keyframes captionfadein {
+@keyframes landingWelcomeCaptionFadeIn {
   0% {opacity: 0;}
   40% {opacity: 0;}
   100% {opacity: 1;}
 }
 
 #landingArrow {
-  animation: arrowfadein;
-  /* animation-duration: 1.8s; */
-  animation-duration: 5s;
+  animation: landingArrowFadeIn;
+  animation-duration: 1.8s;
 }
 
-@keyframes arrowfadein {
+@keyframes landingArrowFadeIn {
   0% {opacity: 0;}
   75% {opacity: 0;}
   100% {opacity: 1;}
 }
+
+/* Media Queries for mobile responsive design  */
+@media screen and (min-width: 520px) {
+  #landingWelcomeMessage {
+    font-size: 3.5rem;
+  }
+  #landingWelcomeCaption {
+    font-size: 1.3rem;
+  }
+}
+
+@media screen and (min-width: 750px) {
+  #landingWelcomeMessage {
+    font-size: 5rem;
+  }
+  #landingWelcomeCaption {
+    font-size: 1.8rem;
+  }
+}
+
