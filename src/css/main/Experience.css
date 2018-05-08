@@ -1,35 +1,14 @@
 /* General CSS */
 #experience {
-  background-color: #eee;
-  padding-bottom: 4em;
-  padding-top: 5em;
-  height: 100%;
+  background-color: rgb(255, 255, 255);
   position: relative;
+  padding-bottom: 5%;
 }
 
 #experienceHeader {
   text-align: center;
-  width: 100%;
-  font-size: 2.5em;
-}
-
-
-
-/* Slides */
-#slidesContainer {
-  display: flex;
-  margin: 0 auto;
-  width: 60%;
-  margin-top: 20px;
-  height: 50%;
-}
-
-#slidesNavButtonHolder {
-  width: 100%;
-  text-align: center;
-  margin-top: 50px;
-}
-
-#slidesNavButtonHolder button:focus {
-  outline-style: none;
+  font-size: 1.8em;
+  margin: 0;
+  padding-top: 10%;
+  padding-bottom: 10%;
 }

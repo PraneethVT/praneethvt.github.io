@@ -11,6 +11,7 @@ class Arrow extends React.Component {
 
 	componentDidMount() {
 		this.componentHeight = document.getElementById(this.arrowProps.scrollToComponentName).offsetTop;
+
 	}
 
 	scrollToComponent() {
@@ -37,7 +38,6 @@ class Arrow extends React.Component {
 		}
 
 		let bounceHolder = "bounceHolder" + ((this.arrowProps.placement === "top") ? "Top" : "Bottom");
-		console.log(bounceHolder);
 
 		return(
 			<div style={arrowHolderStyle}>

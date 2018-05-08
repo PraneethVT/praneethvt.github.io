@@ -8,15 +8,17 @@ class MoreAboutMe extends React.Component {
 			direction: "up",
 			borderStyle: "solid",
 			borderColor: "black",
-			scrollToComponentName: "experience",
+			scrollToComponentName: "landing",
 			placement: "top"
 		}
 
 		return(
 			<div id="moreAboutMe">
-				<Arrow arrowProps={arrowUpProps}/>
-				<div id="blogMessageContainer">
-					<p>Come back soon to visit my blog!</p>
+				{/* <Arrow arrowProps={arrowUpProps}/> */}
+				<div id="blogMessageGrid">
+					<div>
+						<p id="blogMessage">Come back soon to visit my blog!</p>
+					</div>
 				</div>
 
 				<p id="footnote">Powered by Caffeine 2017</p>

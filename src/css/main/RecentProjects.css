@@ -1,28 +1,21 @@
 /* General CSS */
 #recentProjects {
   width: 100%;
-	height: 100%;
-	background-color: white;
-	position: relative;
+	background-color: rgb(250, 250, 250);
 }
 
 #recentProjectsHeader {
-	margin-top: 2.75em;
-	margin-bottom: 1em;
-	font-size: 2em;
-	width: 100%;
+	font-size: 1.8em;
 	text-align: center;
+	padding-top: 10%;
+	padding-bottom: 10%;
+	margin: 0;
 }
 
-
-
-/* Recent projects boxes */
-.container {
-	max-width: 100%;
-}
 
 .recentProjectsBox {
 	height: 350px;
+	width: 100%;
 	background-color: #606060;
 	text-align: center;
 	background-size: 100% 100%;
@@ -50,23 +43,35 @@
 /* Overlay animations */
 .recentProjectsBoxOverlay {
 	height: 100%;
-	padding-top: 30%;
 	opacity: 0;
 	background-color: rgba(0, 0, 0, 0);
-  transition-duration: .4s;
+	transition-duration: .2s;
+	display: grid;
+	align-items: center;
 }
 
 .recentProjectsBox:hover .recentProjectsBoxOverlay {
 	opacity: 1;
-	color: white;
 	background-color: rgba(0, 0, 0, 0.7);
+}
+
+.recentProjectsBoxName {
+	color: white;
+	transition: transform 0.2s linear;
+	transform-style: preserve-3D;
+	transform: scale(0.75);
+}
+
+.recentProjectsBox:hover .recentProjectsBoxName {
+	opacity: 1;
+	transform: scale(1.0);
 }
 
 .recentProjectsBoxOverlay p {
 	font-size: 2em;
 	font-family: 'Muli:700', sans-serif;
 }
-
+/*
 .recentProjectsBoxViewButton {
 	font-family: 'Muli', sans-serif;
 	font-weight: 500;
@@ -79,7 +84,7 @@
   cursor: pointer;
   border-radius: 2px;
   transition-duration: .4s;
-}
+}*/
 
 .recentProjectsBoxViewButton:hover {
 	background-color: white;

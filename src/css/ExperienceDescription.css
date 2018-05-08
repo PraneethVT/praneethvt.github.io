@@ -1,32 +1,50 @@
-#experienceDescription {
-  display: flex;
-  margin-top: 30px;
+.experiencePicContainer {
+  width: 80%;
+  height: 290px;
+  margin: 0 auto;
+}
+
+.experiencePic {
+  width: 100%;
+  height: 100%;
+  border-radius: 12%;
+}
+
+#experienceDetails {
+  width: 80%;
+  margin: 0 auto;
+  margin-bottom: 20%;
+  margin-top: 1.1rem;
 }
 
 #experienceCompany {
   font-weight: 400;
-  color: #2196F3;
+  color: rgb(0, 126, 230);
+  text-decoration: none;
+  font-size: 1.4rem;
+  line-height: 1.7;
 }
 
 #experienceRole p {
-  font-weight: 700;
+  font-weight: 800;
   font-size: 1.1rem;
-  margin-bottom: .4rem;
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 1.4;
 }
 
 #experienceLocation {
-  font-weight: 600;
-  margin-bottom: .4rem;
+  font-weight: 400;
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 2.1;
 }
 
-.experiencePic {
-  width: 200px;
-  height: 200px;
-  border-radius: 20%;
-  margin-top: 20px;
+#experienceSummary {
+  margin-top: 1.2rem;
+  margin-bottom: 0;
+  color: rgb(65, 65, 65);
+  font-weight: 300;
 }
 
-#experienceDetails {
-  margin-left: 30px;
-}
 

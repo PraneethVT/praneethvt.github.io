@@ -1,6 +1,7 @@
 #landing {
   width: 100%;
   height: 100%;
+  margin-bottom: 0;
 }
 
 #landingGrid {
@@ -14,6 +15,7 @@
 #landingWelcomeMessage {  
   color: #000;
   font-size: 2.5rem;
+  font-weight: 300;
   margin-top: 0;
   margin-bottom: 0;
   animation-name: landingWelcomeMessageFadeIn; 
@@ -28,6 +30,7 @@
 #landingWelcomeCaption {
   color: #2196F3;
   font-size: 1.1rem;
+  font-weight: 300;
   margin-top: .75rem;
   margin-bottom: 0;
   animation-name: landingWelcomeCaptionFadeIn; 
