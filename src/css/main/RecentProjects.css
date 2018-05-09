@@ -1,6 +1,6 @@
 /* General CSS */
 #recentProjects {
-  width: 100%;
+	height: 100%;
 	background-color: rgb(250, 250, 250);
 }
 
@@ -12,19 +12,27 @@
 	margin: 0;
 }
 
+#sliderStuff {
+	width: 80%;
+	margin: 0 auto;
+}
 
 .recentProjectsBox {
 	height: 350px;
-	width: 100%;
-	background-color: #606060;
+	width: 60%;
+	background-color: #e00c0c;
 	text-align: center;
 	background-size: 100% 100%;
 }
 
-.recentProjectsBox:hover {
+.slick-prev:before, .slick-next:before {
+	color: black;
+}
+
+/* .recentProjectsBox:hover {
 	background-color: #232323;
 	color: white;
-}
+} */
 
 #recentProjectsThallaIO {
 	background-image: url('../../images/colorfulpic.jpg');
@@ -41,7 +49,7 @@
 
 
 /* Overlay animations */
-.recentProjectsBoxOverlay {
+/* .recentProjectsBoxOverlay {
 	height: 100%;
 	opacity: 0;
 	background-color: rgba(0, 0, 0, 0);
@@ -70,7 +78,7 @@
 .recentProjectsBoxOverlay p {
 	font-size: 2em;
 	font-family: 'Muli:700', sans-serif;
-}
+} */
 /*
 .recentProjectsBoxViewButton {
 	font-family: 'Muli', sans-serif;
@@ -86,15 +94,15 @@
   transition-duration: .4s;
 }*/
 
-.recentProjectsBoxViewButton:hover {
+/* .recentProjectsBoxViewButton:hover {
 	background-color: white;
 	color: #232323;
-}
+} */
 
 
 
 /* More projects button */
-#recentProjectsMoreButton {
+/* #recentProjectsMoreButton {
   font-family: 'Muli', sans-serif;;
   background-color: white;
   color: black;;
@@ -111,4 +119,4 @@
 #recentProjectsMoreButton:hover {
   background-color: #333333;;
   color: white;
-}
+} */

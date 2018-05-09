@@ -12,7 +12,7 @@ class ThallaIO extends React.Component {
 		return(
 			<div id="container">
 				<Landing/>
-				<RecentProjects/>
+				{/* <RecentProjects/> */}
 				<Experience/>
 				<MoreAboutMe/>
 			</div>

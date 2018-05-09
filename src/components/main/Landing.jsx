@@ -8,7 +8,7 @@ class Landing extends React.Component {
 			direction: "down",
 			borderStyle: "solid",
 			borderColor: "black",
-			scrollToComponentName: "recentProjects",
+			scrollToComponentName: "experience",
 			placement: "bottom"
 		};
 
