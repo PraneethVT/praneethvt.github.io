@@ -1,6 +1,6 @@
 .experiencePicContainer {
-  width: 80%;
-  height: 80%;
+  width: 80vw;
+  height: 70vw;
   margin: 0 auto;
 }
 
@@ -13,7 +13,7 @@
 #experienceDetails {
   width: 80%;
   margin: 0 auto;
-  margin-bottom: 20%;
+  padding-bottom: 5rem;
   margin-top: 1.1rem;
 }
 
@@ -47,4 +47,14 @@
   font-weight: 300;
 }
 
+@media screen and (min-width: 520px) {
+  .experiencePicContainer {
+    width: 400px;
+    height: 350px;
+  }
+
+  #experienceDetails {
+    width: 60%;
+  }
+}
 

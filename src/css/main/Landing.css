@@ -66,10 +66,10 @@
 
 @media screen and (min-width: 750px) {
   #landingWelcomeMessage {
-    font-size: 5rem;
+    font-size: 4.5rem;
   }
   #landingWelcomeCaption {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
   }
 }
 

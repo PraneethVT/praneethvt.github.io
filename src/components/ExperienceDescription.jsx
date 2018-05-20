@@ -49,7 +49,7 @@ class ExperienceDescription extends React.Component {
 
   render() {
     return(
-      <div id="experienceDescription" className="w3-animate-opacity">
+      <div id="experienceDescription">
         <div className="experiencePicContainer">
           <img src={this.img_src} id={this.img_id} alt={this.imd_alt} className="experiencePic"></img>
         </div>

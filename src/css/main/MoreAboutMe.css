@@ -12,13 +12,14 @@
   align-items: center;
   height: 100%;
   text-align: center;
-  width: 80%;
+  width: 75%;
   margin: 0 auto;
 }
 
 #blogMessage {
   color: #000;
-  font-size: 2.1em;
+  font-size: 2.1rem;
+  font-weight: 300;
 }
 
 /* Footnote */
@@ -33,13 +34,7 @@
 /* Media Queries for mobile responsive design  */
 @media screen and (min-width: 520px) {
   #blogMessage {
-    font-size: 3.5rem;
-  }
-}
-
-@media screen and (min-width: 750px) {
-  #blogMessage {
-    font-size: 5rem;
+    font-size: 2.5rem;
   }
 }
 
